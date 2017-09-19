@@ -1,0 +1,27 @@
+{
+  "name": "test",
+  "description": "",
+  "main": "",
+  "license": "ISC",
+  "homepage": "",
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "./dist/js/bootstrap.min.js",
+        "./dist/css/bootstrap.min.css"
+      ]
+    }
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap": "^3.3.7",
+    "slick": "*"
+  }
+}
