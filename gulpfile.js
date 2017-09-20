@@ -41,6 +41,7 @@ var path = {
     app: { //Пути откуда брать исходники
         html: 'app/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
         js: 'app/js/*.js',//В стилях и скриптах нам понадобятся только main файлы
+        comp: 'app/js/',//В стилях и скриптах нам понадобятся только main файлы
         lib: 'app/js/components/*.js',
         styl: 'app/precss/*.styl',
         css: 'app/css/*.css',
@@ -92,11 +93,18 @@ gulp.task('html:build', function () {
         .pipe(reload({stream: true})); //И перезагрузим наш сервер для обновлений
 });
 
+gulp.task('js-comp:build', function () {
+    return gulp.src(path.app.lib)
+        .pipe(concat('script.js'))
+        .pipe(gulp.dest(path.app.comp))
+        .pipe(reload({stream: true}));
+});
 
 
 gulp.task('js:build', function () {
     return gulp.src(path.app.lib)
         .pipe(concat('script.js'))
+        .pipe(gulp.dest(path.app.comp)),
     gulp.src(path.app.js) //Найдем наш main файл
         .pipe(sourcemaps.init()) //Инициализируем sourcemap
         .pipe(uglify().on('error', gutil.log))
@@ -161,6 +169,7 @@ gulp.task('build', [
     'vendorJs:build',
     'google:fonts',
     'html:build',
+    'js-comp:build',
     'js:build',
     'styl:build',
     'css:build',
