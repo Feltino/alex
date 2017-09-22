@@ -1,9 +1,26 @@
+.one
+  background: url(../img/vct.jpg) center center no-repeat
+  +sm-m()
+    margin-top: -20px
+  +ps-m()
+    margin-top: -20px
+  +xs-m()
+    margin-top: -20px
+  +xxs-m()
+    margin-top: -20px
 .head
+  row-flex()
   position: relative
   display: flex
+  justify-content: space-between
+  position: relative
   &__vector
     position: absolute
     left: 0
+    +lg-m()
+      left: -45%
+    +md-m()
+      left: -70%
   &__img
     position: absolute
     right: 0
@@ -11,6 +28,13 @@
   &__box
     margin: 0 auto
   &__title
+    col()
+    size-xl(12)
+    size-lg(12)
+    size-md(12)
+    size-sm(12)
+    md(font-size, 70px)
+    sm(font-size, 59px)
     bic()
     color: #c6004a
     text-align: center
@@ -18,6 +42,8 @@
     margin-top: 75px
   &__work
     text-align: center
+    md(margin-top, 0)
+    sm(margin-top, 0)
     open()
     font-size: 18px
     text-transform: uppercase
@@ -40,6 +66,15 @@
   &__li
     &--left
       margin-left: 186px
+    &--one
+      position: absolute
+      display: flex
+      left: 72%;
+      top: 222px;
+      +xs-m()
+        left: 40%
+      +xxs-m()
+        left: 40%
   &__a
     font-size: 24px
     text-transform: uppercase

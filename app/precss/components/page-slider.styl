@@ -9,6 +9,14 @@
   color: #9c364b;
   padding-top: 6px
   margin-bottom: 12px
+  +sm-m()
+    display: none
+  +xs-m()
+    display: none
+  +xxs-m()
+    display: none
+  +ps-m()
+    display: none
 
 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto
   position: absolute;
@@ -35,7 +43,51 @@
     color: #ffffff
     line-height 1em
     margin-bottom: 20px
+    +lg-m()
+      display: block
+    +md-m()
+      display: block
+    +sm-m()
+      display: block
+    +xs-m()
+      display: none
+    +xxs-m()
+      display: none
+    +ps-m()
+      display: none
+    &--one
+      +lg-m()
+        display: none
+      +md-m()
+        display: none
+      +sm-m()
+        display: none
+      +xs-m()
+        display: block
+        text-align: center
+        font-size: 26px;
+        margin-top: 30px;
+        margin-left: 45px
+      +xxs-m()
+        display: block
+        text-align: center
+        font-size: 22px;
+        margin-top: 30px;
+      +ps-m()
+        display: block
+        text-align: center
+        font-size: 22px;
+        margin-left: 26px
+        margin-top: 30px;
   &__text
     open()
     font-size: 18px
     color: #b4b3b3
+    +sm-m()
+      display: none
+    +xs-m()
+      display: none
+    +xxs-m()
+      display: none
+    +ps-m()
+      display: none

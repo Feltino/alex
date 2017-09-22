@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/styles.css">
 <body>
-<section>
+<section class="one">
     <div class="head">
-        <img src="img/vector.png" alt="Цветы" class="head__vector">
+        <!--<img src="img/vector.png" alt="Цветы" class="head__vector">-->
         <div class="container">
             <div class="head__box">
                 <p class="head__title">
@@ -33,11 +33,11 @@
                 </p>
             </div>
         </div>
-        <img src="img/vector2.png" alt="Цветы" class="head__img">
+        <!--<img src="img/vector2.png" alt="Цветы" class="head__img">-->
     </div>
     <div class="menu">
         <div class="container">
-            <nav>
+            <nav class="visible-lg visible-md">
                 <ul class="menu__ul">
                     <li class="menu__li menu__li--left">
                         <a href="" class="menu__a">Макияж</a>
@@ -57,24 +57,32 @@
                     </li>
                 </ul>
             </nav>
-            <img src="img/shape.png" alt="Shape" class="menu__in">
-            <ul class="menu__sub">
-                <li class="menu__word">
-                    <a href="#" class="menu__makeup">Свадебный макияж</a>
-                </li>
-                <li class="menu__word">
-                    <a href="#" class="menu__makeup">Вечерний макияж</a>
-                </li>
-                <li class="menu__word">
-                    <a href="#" class="menu__makeup">Дневной макияж</a>
-                </li>
-                <li class="menu__word">
-                    <a href="#" class="menu__makeup">Макияж для фотосесий</a>
-                </li>
-                <li class="menu__word">
-                    <a href="#" class="menu__makeup">Портфолио</a>
-                </li>
-            </ul>
+            <div class="container">
+                <div class="menu__li menu__li--one hidden-md hidden-lg">
+                    <a href="#" class="menu__social"></a>
+                    <a href="#" class="menu__inst"></a>
+                </div>
+            </div>
+            <img src="img/shape.png" alt="Shape" class="menu__in visible-lg visible-md">
+            <div class="visible-lg visible-md">
+                <ul class="menu__sub">
+                    <li class="menu__word">
+                        <a href="#" class="menu__makeup">Свадебный макияж</a>
+                    </li>
+                    <li class="menu__word">
+                        <a href="#" class="menu__makeup">Вечерний макияж</a>
+                    </li>
+                    <li class="menu__word">
+                        <a href="#" class="menu__makeup">Дневной макияж</a>
+                    </li>
+                    <li class="menu__word">
+                        <a href="#" class="menu__makeup">Макияж для фотосесий</a>
+                    </li>
+                    <li class="menu__word">
+                        <a href="#" class="menu__makeup">Портфолио</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
@@ -88,20 +96,9 @@
                             Достигнем <br>
                             совершенства вместе!
                         </p>
-                        <p class="slider__text">
-                            Вечерний макияж <br>
-                            от 3000 руб. у Вас дома
-                        </p>
-                    </div>
-                </div>
-                <img src="/img/slide.jpg">
-            </li>
-            <li>
-                <div class="container">
-                    <div class="slider__box">
-                        <p class="slider__title">
-                            Достигнем <br>
-                            совершенства вместе!
+                        <p class="slider__title slider__title--one">
+                            Достигнем
+                            совершенства!
                         </p>
                         <p class="slider__text">
                             Вечерний макияж <br>
@@ -118,6 +115,10 @@
                             Достигнем <br>
                             совершенства вместе!
                         </p>
+                        <p class="slider__title slider__title--one">
+                            Достигнем
+                            совершенства!
+                        </p>
                         <p class="slider__text">
                             Вечерний макияж <br>
                             от 3000 руб. у Вас дома
@@ -132,6 +133,29 @@
                         <p class="slider__title">
                             Достигнем <br>
                             совершенства вместе!
+                        </p>
+                        <p class="slider__title slider__title--one">
+                            Достигнем
+                            совершенства!
+                        </p>
+                        <p class="slider__text">
+                            Вечерний макияж <br>
+                            от 3000 руб. у Вас дома
+                        </p>
+                    </div>
+                </div>
+                <img src="/img/slide.jpg">
+            </li>
+            <li>
+                <div class="container">
+                    <div class="slider__box">
+                        <p class="slider__title">
+                            Достигнем <br>
+                            совершенства вместе!
+                        </p>
+                        <p class="slider__title slider__title--one">
+                            Достигнем
+                            совершенства!
                         </p>
                         <p class="slider__text">
                             Вечерний макияж <br>
@@ -383,6 +407,98 @@
     </div>
 </section>
 <section>
+    <div class="wedding">
+        <div class="container">
+            <h2 class="wedding__title">
+                Свадебные прически и макияж в Краснодаре
+            </h2>
+            <img src="img/img-w.jpg" alt="Women" class="wedding__img">
+            <div class="wedding__box">
+                <p class="wedding__supper">
+                    Суперпредложение!
+                </p>
+                <p class="wedding__text">
+                    пригласи подругу и получи скидку
+                </p>
+                <p class="wedding__item">
+                    -30%
+                </p>
+            </div>
+            <div class="wedding__word">
+                <p class="wedding__self">
+                    Если вам нужен Lorem Ipsum для серьёзного проекта,
+                    вы наверняка не хотите какой-нибудь шутки, скрытой
+                    в середине абзаца. Это
+                    делает предлагаемый здесь генератор единственным настоящим
+                    Lorem Ipsum генератором.
+                </p>
+                <p class="wedding__step">
+                    <div class="wedding__line"></div>
+                    <p class="wedding__in">
+                        Имею опыт работы в сфере более 9 лет. <br>
+                        Это делает предлагаемый здесь генератор <br>
+                        единственным настоящим Lorem Ipsum. <br>
+                        Это делает предлагаемый здесь генератор
+                        единственным настоящим Lorem Ipsum генератором.
+                    </p>
+                    <p class="wedding__east">
+                        Он использует словарь из более чем 200 слов, а также набор моделей предложений. Он использует словарь из более чем 200 латинских слов,
+                        а также набор моделей
+                        разнообразных <br>
+                        предложений.
+                    </p>
+
+                </p>
+                <img src="img/vect4.1.png" alt="Vector" class="wedding__vector">
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="number">
+        <div class="container">
+            <div class="number__box">
+                <div class="number__item">
+                    <p class="number__col">
+                        128
+                    </p>
+                    <p class="number__ref">
+                        нереальных <br>
+                        невест
+                    </p>
+                </div>
+                <div class="number__item">
+                    <p class="number__col">
+                        59
+                    </p>
+                    <p class="number__ref">
+                        неповторимых <br>
+                        выпускниц
+                    </p>
+                </div>
+                <div class="number__item">
+                    <p class="number__col">
+                        24
+                    </p>
+                    <p class="number__ref">
+                        довольные <br>
+                        ювилярши
+                    </p>
+                </div>
+                <div class="number__item">
+                    <p class="number__col">
+                        163
+                    </p>
+                    <p class="number__ref">
+                        невероятных <br>
+                        именинниц
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
     <div class="women">
         <img src="img/w1.jpg" alt="Women" class="women__img">
         <img src="img/w2.jpg" alt="Women" class="women__img">
@@ -394,6 +510,48 @@
         <img src="img/w8.jpg" alt="Women" class="women__img">
     </div>
 </section>
+<footer>
+    <div class="foot">
+        <div class="container">
+            <img src="img/up_f.png" alt="Up" class="foot__up hidden-xs hidden-sm">
+            <p class="foot__contacts">
+                Контакты
+            </p>
+            <div class="foot__dest">
+                <div class="foot__box"></div>
+                <img src="img/st.png" alt="" class="foot__img">
+                <div class="foot__box"></div>
+            </div>
+            <div class="foot__social">
+                <p class="foot__text foot__text--one">
+                    <img src="img/tel.png" alt="" class="foot__icn"> тел./watsup:
+                </p>
+                <p class="foot__word">
+                    8-918-391-77-95
+                </p>
+            </div>
+            <div class="foot__social">
+                <p class="foot__text">
+                    <img src="img/inst-f.png" alt="" class="foot__icn"> instagram:
+                </p>
+                <p class="foot__word">
+                    vizazhistirina
+                </p>
+            </div>
+            <div class="foot__social">
+                <p class="foot__text foot__text--two">
+                    <img src="img/vk-f.png" alt="" class="foot__icn"> vk:
+                </p>
+                <p class="foot__word">
+                    vizazhist_irina
+                </p>
+            </div>
+            <a href="#" class="foot__btn">
+                2 154 854 <img src="img/rect1.png" alt="Rectangle" class="foot__tangl">
+            </a>
+        </div>
+    </div>
+</footer>
 <script src="js/jquery.js"></script>
 <script src="js/jquery.bxslider.js"></script>
 <script src="js/jquery.fitvids.js"></script>
