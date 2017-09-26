@@ -1,3 +1,18 @@
+lg-v()
+  @media only screen and (max-width: 2200px)
+    {block}
+lm-v()
+  @media only screen and (max-width: 1420px)
+    {block}
+xs-v()
+  @media only screen and (max-width: 425px)
+    {block}
+xxs-v()
+  @media only screen and (max-width: 375px)
+    {block}
+.box
+  display: flex
+  flex-wrap wrap
 .visage
   background-color: #f5f5f6
   padding-top: 50px
@@ -6,21 +21,52 @@
   background: url(../img/vect2.jpg) 0 0 no-repeat
   padding-top: 16px
   padding-bottom: 16px
+  +xs-m()
+    background: none
+  +xxs-m()
+    background: none
+  +ps-m()
+    background: none
   & .container
     position: relative
   &__title
     phil()
     font-size: 30px
+    margin-left: 15px;
     color: #fff
+    +xs-m()
+      padding-top: 15px
+      padding-bottom: 15px
+      color: #000
+      border-top 2px solid #d0d2d2
+      border-bottom 2px solid #d0d2d2
+    +xxs-m()
+      padding-top: 15px
+      padding-bottom: 15px
+      color: #000
+      border-top 2px solid #d0d2d2
+      border-bottom 2px solid #d0d2d2
+    +ps-m()
+      padding-top: 15px
+      padding-bottom: 15px
+      color: #000
+      border-top 2px solid #d0d2d2
+      border-bottom 2px solid #d0d2d2
   &__box
-    width: 700px
     float: left
+    col()
+    size-lg(6)
+    size-sm(12)
+    +lg-v()
+      width: 50%
   &__text
     open-l()
     font-size: 14px
     line-height: 1.9em
     margin-top: 35px
     margin-bottom: 20px
+    +sm-s()
+      margin-top: 0px;
   &__img
     float: left
     margin-right: 8px
@@ -34,7 +80,23 @@
     line-height: 1.9em
     open-l()
     font-size: 14px
+  &__visageq
+    position inherit
+    col()
+    size-sm(12)
+    size-xl(5)
+    size-lg(5)
+    lg(order, -1)
+    +xl-s()
+      margin-top: 41px
+      align-self: baseline
+    +lg-s()
+      margin-top: 41px
+      align-self: baseline
+
   &__visage
-    position: absolute
-    margin-left: 35px;
-    margin-top: -49px;
+    float: right
+    margin-top: -49px
+    align-self: baseline;
+    +lm-v()
+      margin-top: 46px;

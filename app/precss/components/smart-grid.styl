@@ -1,5 +1,5 @@
 $columns = 12
-$offset = 15px
+$offset = 30px
 $offset_one_side = ($offset / 2)
 $atom = (100% / $columns)
 
@@ -58,14 +58,14 @@ reset()
 
 
 wrapper()
-    max-width 1170px
+    max-width 1200px
     padding-left 30px
     padding-right 30px
     margin 0 auto
 
     @media screen and (max-width: $break_xl)
-        padding-left 20px
-        padding-right 20px
+        padding-left  20px
+        padding-right  20px
     
 
     @media screen and (max-width: $break_lg)
@@ -188,7 +188,7 @@ offset-right-padding-xl($n)
 justify-content-xl($value)
     @media screen and (max-width: $break_xl)
         justify-content $value
-    
+
 
 xl($name, $value)
     @media screen and (max-width: $break_xl)

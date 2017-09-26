@@ -3,10 +3,24 @@
   padding-top: 15px
   padding-bottom: 15px
   margin-bottom: 51px
+  +sm-s()
+    background: none
 .cosmetics
   padding-top: 50px
+  &__box
+    display: flex
+    justify-content: space-between
+    flex-wrap wrap
+    +xl-s()
+      justify-content: center
   &__h2
     phil()
     font-size: 30px
     color: #fff
     text-align: center
+    +sm-s()
+      padding-top: 15px
+      padding-bottom: 15px
+      color: #000
+      border-top 2px solid #d0d2d2
+      border-bottom 2px solid #d0d2d2

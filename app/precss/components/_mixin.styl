@@ -23,7 +23,9 @@ webfont(family, file, hack-chrome-windows = false, weight = normal, style = norm
 
 google-font($name)
   @import url(https://fonts.googleapis.com/css?family=$name)
-
+llg-m()
+  @media only screen and (max-width: 12000px)
+    {block}
 lg-m()
  @media only screen and (max-width: 1200px)
    {block}
@@ -42,6 +44,23 @@ xxs-m()
 ps-m()
   @media only screen and (max-width: 320px)
     {block}
+
+
+
+xl-s()
+  @media only screen and (max-width: 1140px)
+    {block}
+lg-s()
+  @media only screen and (max-width: 960px)
+    {block}
+md-s()
+  @media only screen and (max-width: 720px)
+    {block}
+sm-s()
+  @media only screen and (max-width: 540px)
+    {block}
+
+
 
 
 

@@ -1,7 +1,20 @@
+xll-s()
+  @media only screen and (max-width: 719px)
+    {block}
 .slider1
   width: 61.6%
   float: left
   margin-top: 21px
+  +xl-s()
+    width: 60.6%
+  +lg-s()
+    width: 59.6%
+  +sm-s()
+    col()
+    size-sm(6)
+    width: 59%
+  +xs-m()
+    width: 50%
 .up
   background: #fff url(../img/bg1.jpg) 0 0 no-repeat
 .makeup
@@ -20,32 +33,76 @@
     background: url(../img/img1.jpg) 0 0 no-repeat
     padding-top: 15px
     padding-bottom: 20px
-
+    margin-top: 50px
+    +xs-m()
+      background: none
+    +xxs-m()
+      background: none
+    +ps-m()
+      background: none
+    +sm-m()
+      margin-top: 0
   &__title
     text-align: center
     phil()
     font-size: 30px
     color: #fff
+    +xs-m()
+      padding-top: 15px
+      padding-bottom: 15px
+      color: #000
+      border-top 2px solid #d0d2d2
+      border-bottom 2px solid #d0d2d2
+    +xxs-m()
+      padding-top: 15px
+      padding-bottom: 15px
+      color: #000
+      border-top 2px solid #d0d2d2
+      border-bottom 2px solid #d0d2d2
+    +ps-m()
+      padding-top: 15px
+      padding-bottom: 15px
+      color: #000
+      border-top 2px solid #d0d2d2
+      border-bottom 2px solid #d0d2d2
   &__img
-    width: 35.8%
+    width: 35.3%
     margin-left: 28px
     margin-top: 21px
+    +lg-s()
+      width: 35.4%
+    +sm-s()
+      width: 35.1%
+    +xs-m()
+      width: 29%
 .work
+  &__hidden
+    margin-left: 0
+    margin-right: 0
+    +xs-m()
+      width: 165px
+    +xxs-m()
+      width: 165px
+    +ps-m()
+      width: 136px
   &__box
     display: flex
+    flex-wrap: nowrap;
+    +lg-m()
+      flex-wrap wrap
+      justify-content: center;
+    +md-m()
+      justify-content: center
+      flex-wrap wrap
+    +md-s()
+      justify-content: center
+      flex-wrap wrap
   &__title
     phil()
     font-size: 30px
     text-align: center
     margin-bottom: 17px
     margin-top: -37px
-
-  &__img
-    margin-right: 17px
-    height: 346px
-    position: relative;
-    &--one
-      margin-right: 0
   &__search
     position: absolute;
     text-align: center;
@@ -53,6 +110,30 @@
     height: 346px;
     z-index: 999;
     margin-top: -345px;
+    +ps-m()
+      height: 154px
+      width: 122px
+      margin-top: 10px
+    +sm-s()
+      height: 200px;
+      margin-top: -210px;
+      width: 159px;
+    +md-s()
+      height: 216px;
+      margin-top: 41px;
+      width: 170px;
+    +xll-s()
+      height: 298px;
+      margin-top: -309px;
+      width: 239px;
+    +lg-s()
+      height: 216px;
+      margin-top: -226px;
+      width: 170px;
+    +xl-s()
+      height: 280px;
+      width: 223px;
+      margin-top: -290px;
     &--two:hover
       width: 274px !important
     &--three:hover
@@ -65,22 +146,84 @@
       padding-top: 141px;
       width: 276px;
       background-color: rgba(142,31,16,0.4);
-      margin-top: -345px;
+      margin-top: -355px;
       height: 346px;
       cursor: pointer;
+      +ps-m()
+        height: 154px
+        width: 122px
+        margin-top: -163px;
+      +sm-s()
+        height: 200px;
+        margin-top: -210px;
+        width: 159px;
+      +md-m()
+        height: 280px;
+        width: 223px;
+        margin-top: -289px;
+      +md-s()
+        height: 216px;
+        margin-top: 41px;
+        width: 170px;
+      +lg-s()
+        height: 216px;
+        margin-top: -226px;
+        width: 170px;
+      +xll-s()
+        height: 298px;
+        margin-top: -309px;
+        width: 239px;
+      +xl-s()
+        height: 280px;
+        width: 223px;
+        margin-top: -290px;
+
     & img
       display: none
     &:hover img
-        display: block
+      display: block
   &__look
     position: absolute
     width: 125px;
     top: 45%;
     left: 25%;
     height: 49px;
+    +lg-s()
+      width: 87px;
+      height: 35px;
+    +md-s()
+      width: 62px;
+      height: 25px;
+    +sm-s()
+      width: 80px;
+      height: 32px;
+    +xll-s()
+      width: 113px;
+      height: 48px;
+    +ps-m()
+      width: 62px;
+      height: 25px;
     &:hover
       position: absolute
       opacity 1
+  &__img
+    margin-right: 17px
+    height: 346px
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    +ps-m()
+      height: 154px
+    +sm-s()
+      height: 200px
+    +md-s()
+      height: 300px
+    +lg-s()
+      height: 215px
+    +xl-s()
+      height: 280px
+    &--one
+      margin-right: 0
 .batn
   &__all
     display: block
@@ -99,21 +242,44 @@
       text-decoration: none
   &__arrow
     margin-left: 18px
-
 .work__hidden--one
   margin-top: 31px
   order 0
   margin-bottom: 31px
+  +md-s()
+    margin-top: 0
+    margin-bottom: 0
+  +sm-s()
+    margin-top: 0
+    margin-bottom: 0
 .work__hidden--two
   margin-top: 31px
   order -1
   margin-bottom: 31px
+  +md-s()
+    margin-top: 0
+    margin-bottom: 0
+  +sm-s()
+    margin-top: 0
+    margin-bottom: 0
 .work__hidden--three
   margin-top: 31px
   order -2
   margin-bottom: 31px
+  +md-s()
+    margin-top: 0
+    margin-bottom: 0
+  +sm-s()
+    margin-top: 0
+    margin-bottom: 0
 .work__hidden--four
   margin-top: 31px
   order -3
   margin-bottom: 31px
+  +md-s()
+    margin-top: 0
+    margin-bottom: 0
+  +sm-s()
+    margin-top: 0
+    margin-bottom: 0
 

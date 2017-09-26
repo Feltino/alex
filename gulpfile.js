@@ -130,7 +130,6 @@ gulp.task('styl:build', function () {
         // }))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.dist.styl))
-        .pipe(gulp.dest(path.dist.css))
         .pipe(reload({stream: true}));
 });
 
